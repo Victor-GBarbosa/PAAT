@@ -1,0 +1,99 @@
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">
+      <span class="title-icon">📋</span>
+      Lista de Projetos
+    </h1>
+    <p class="page-subtitle">Gerencie todos os projetos do sistema PAAT</p>
+  </header>
+
+  <div class="actions-bar">
+    <button class="btn btn-primary">
+      <span class="btn-icon">➕</span>
+      Novo Projeto
+    </button>
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Buscar projetos..."
+      />
+      <span class="search-icon">🔍</span>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let projeto of projetos">
+      <div class="card-header">
+        <div class="project-id">
+          <span class="id-label">ID:</span>
+          <span class="id-value">{{ projeto.id }}</span>
+        </div>
+        <div class="project-group">
+          <span class="group-label">Grupo:</span>
+          <span class="group-value">{{ projeto.grupoID }}</span>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h3 class="project-title">{{ projeto.description }}</h3>
+
+        <div class="project-details">
+          <div class="detail-item">
+            <span class="detail-label">Aplicador:</span>
+            <span class="detail-value">{{ projeto.aplicador }}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Sugestor:</span>
+            <span class="detail-value">{{ projeto.suggester }}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Digestor:</span>
+            <span class="detail-value">{{ projeto.digester }}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">PPAs:</span>
+            <span class="detail-value ppa-count">{{
+              projeto.quantidadeDePPAs
+            }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-actions">
+        <button
+          class="btn btn-outline-primary btn-sm"
+          title="Visualizar projeto"
+          (click)="onVisualizar(projeto)"
+        >
+          <span class="btn-icon">👁️</span>
+          Visualizar
+        </button>
+        <button
+          class="btn btn-outline-secondary btn-sm"
+          title="Editar projeto"
+          (click)="onEditar(projeto)"
+        >
+          <span class="btn-icon">✏️</span>
+          Editar
+        </button>
+        <button
+          class="btn btn-outline-danger btn-sm"
+          title="Excluir projeto"
+          (click)="onExcluir(projeto)"
+        >
+          <span class="btn-icon">🗑️</span>
+          Excluir
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination-container">
+    <nav class="pagination">
+      <button class="pagination-btn" disabled>‹ Anterior</button>
+      <span class="pagination-info">Página 1 de 1</span>
+      <button class="pagination-btn" disabled>Próxima ›</button>
+    </nav>
+  </div>
+</div>
