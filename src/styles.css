@@ -1,7 +1,7 @@
 /* Design System do Governo Brasileiro - Estilos Globais */
 
 /* Importação da fonte Rawline (oficial do DS Gov) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 /* Reset CSS */
 * {
@@ -12,33 +12,34 @@
 
 /* Definição das cores do Design System */
 :root {
-  --primary-color: #1351B4;
-  --primary-dark: #0C326F;
-  --primary-light: #4F81C7;
-  --secondary-color: #2670E8;
+  --primary-color: #1351b4;
+  --primary-dark: #0c326f;
+  --primary-light: #4f81c7;
+  --secondary-color: #2670e8;
   --success-color: #168821;
-  --warning-color: #FFCD07;
-  --danger-color: #E52207;
-  --info-color: #155BCB;
-  
-  --gray-1: #F8F9FA;
-  --gray-2: #E9ECEF;
-  --gray-3: #DEE2E6;
-  --gray-4: #CED4DA;
-  --gray-5: #ADB5BD;
-  --gray-6: #6C757D;
+  --warning-color: #ffcd07;
+  --danger-color: #e52207;
+  --info-color: #155bcb;
+
+  --gray-1: #f8f9fa;
+  --gray-2: #e9ecef;
+  --gray-3: #dee2e6;
+  --gray-4: #ced4da;
+  --gray-5: #adb5bd;
+  --gray-6: #6c757d;
   --gray-7: #495057;
-  --gray-8: #343A40;
+  --gray-8: #343a40;
   --gray-9: #212529;
-  
-  --white: #FFFFFF;
+
+  --white: #ffffff;
   --text-primary: #212529;
-  --text-secondary: #6C757D;
+  --text-secondary: #6c757d;
 }
 
 /* Configuração global da tipografia */
 body {
-  font-family: 'Inter', 'Rawline', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Inter", "Rawline", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
   background-color: var(--gray-1);
@@ -48,18 +49,35 @@ body {
 }
 
 /* Configuração de headings seguindo o DS Gov */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   line-height: 1.2;
   color: var(--text-primary);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
 
 /* Links */
 a {
@@ -74,7 +92,9 @@ a:hover {
 }
 
 /* Inputs globais */
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: 1rem;
 }

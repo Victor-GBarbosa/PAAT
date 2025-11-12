@@ -5,5 +5,5 @@ export default interface ProjectModel {
   suggester: string;
   aplicador: string;
   quantidadeDePPAs: number;
-  description: string;
+  descrwiption: string;
 }
